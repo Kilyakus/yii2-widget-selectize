@@ -621,10 +621,10 @@
 			var inputId;
 	
 			inputMode         = self.settings.mode;
-			           = $input.attr('class') || '';
-			console.log($input.attr('class'));
-			$wrapper          = $('<div>').addClass(settings.wrapperClass).addClass(inputMode);
-			$control          = $('<div>').addClass(settings.inputClass).addClass('items').addClass(classes).appendTo($wrapper);
+			classes           = $input.attr('class') || '';
+	
+			$wrapper          = $('<div>').addClass(settings.wrapperClass).addClass(classes).addClass(inputMode);
+			$control          = $('<div>').addClass(settings.inputClass).addClass('items').appendTo($wrapper);
 			$control_input    = $('<input type="text" autocomplete="off" />').appendTo($control).attr('tabindex', $input.is(':disabled') ? '-1' : self.tabIndex);
 			$dropdown_parent  = $(settings.dropdownParent || $wrapper);
 			$dropdown         = $('<div>').addClass(settings.dropdownClass).addClass(inputMode).hide().appendTo($dropdown_parent);
