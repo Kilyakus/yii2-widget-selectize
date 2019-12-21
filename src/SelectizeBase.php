@@ -6,7 +6,7 @@ use yii\helpers\Url;
 use yii\web\JsExpression;
 use kilyakus\widget\taggable\assets\SelectizeAsset;
 
-class SelectizeInput extends \yii\widgets\InputWidget
+class SelectizeBase extends \yii\widgets\InputWidget
 {
     public $loadUrl;
     
