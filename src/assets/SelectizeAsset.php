@@ -1,5 +1,5 @@
 <?php
-namespace kilyakus\widget\selectize;
+namespace kilyakus\widget\selectize\assets;
 
 use yii\web\AssetBundle;
 
@@ -7,7 +7,7 @@ class SelectizeAsset extends AssetBundle
 {
     public function init()
     {
-        $this->sourcePath = __DIR__ . '/assets';
+        $this->sourcePath = __DIR__ . '/dist';
     }
 
     public $css = [

@@ -4,7 +4,7 @@ namespace kilyakus\widget\selectize;
 use yii\helpers\Json;
 use yii\helpers\Url;
 use yii\web\JsExpression;
-use kilyakus\widget\taggable\assets\SelectizeAsset;
+use kilyakus\widget\selectize\assets\SelectizeAsset;
 
 class SelectizeBase extends \yii\widgets\InputWidget
 {
