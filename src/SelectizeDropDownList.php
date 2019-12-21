@@ -3,7 +3,7 @@ namespace kilyakus\widget\selectize;
 
 use yii\helpers\Html;
 
-class TagsDropDownList extends InputWidget
+class SelectizeDropDownList extends InputWidget
 {
     public $items = [];
 

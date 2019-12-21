@@ -3,7 +3,7 @@ namespace kilyakus\widget\selectize;
 
 use yii\helpers\Html;
 
-class TagsTextInput extends InputWidget
+class SelectizeTextInput extends InputWidget
 {
     public function run()
     {

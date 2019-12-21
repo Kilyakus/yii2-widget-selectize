@@ -4,9 +4,9 @@ namespace kilyakus\widget\selectize;
 use yii\helpers\Json;
 use yii\helpers\Url;
 use yii\web\JsExpression;
-use kilyakus\widget\taggable\assets\TaggableAsset;
+use kilyakus\widget\taggable\assets\SelectizeAsset;
 
-class TagsInput extends \yii\widgets\InputWidget
+class SelectizeInput extends \yii\widgets\InputWidget
 {
     public $loadUrl;
     
@@ -30,7 +30,7 @@ class TagsInput extends \yii\widgets\InputWidget
 
         $options = Json::encode($this->clientOptions);
         $view = $this->getView();
-        TaggableAsset::register($view);
+        SelectizeAsset::register($view);
         $view->registerJs("jQuery('#$id').selectize($options);");
     }
 }

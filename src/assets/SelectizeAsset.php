@@ -3,7 +3,7 @@ namespace kilyakus\widget\selectize;
 
 use yii\web\AssetBundle;
 
-class TaggableAsset extends AssetBundle
+class SelectizeAsset extends AssetBundle
 {
     public function init()
     {
